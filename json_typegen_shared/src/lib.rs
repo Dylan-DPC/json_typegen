@@ -118,6 +118,7 @@ pub fn codegen(name: &str, input: &str, mut options: Options) -> Result<String, 
     Ok(generated_code)
 }
 
+// TODO: Get rid of regex. Should shrink wasm bundle size quite a bit.
 /// Parse "names" like `pub(crate) Foo` into a name and a visibility option
 fn handle_pub_in_name<'a>(name: &'a str, options: &mut Options) -> &'a str {
     lazy_static! {

@@ -12,7 +12,7 @@ cd "$DIR/json_typegen_cli"
 cargo build --target "$TARGET" --verbose
 cargo test --target "$TARGET" --verbose
 
-cd "$DIR/json_typegen_web"
+cd "$DIR/json_typegen_wasm"
 cargo build --target "$TARGET" --verbose
 cargo test --target "$TARGET" --verbose
 
@@ -22,3 +22,5 @@ cargo test --target "$TARGET" --verbose
 
 cd "$DIR/json_typegen_demo"
 cargo run --target "$TARGET" --verbose
+
+# TODO: cd "$DIR/json_typegen_web" && npm run build

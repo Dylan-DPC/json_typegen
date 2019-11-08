@@ -6,3 +6,7 @@ members = [
     "json_typegen",
     "json_typegen_demo"
 ]
+
+[profile.release]
+lto = true
+opt-level = "s"
